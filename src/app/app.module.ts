@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { A11yModule } from '@angular/cdk/a11y';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -64,8 +65,9 @@ import { ShopComponent } from './shop/shop.component';
     MatSliderModule,
     MatToolbarModule,
     GoogleMapsModule,
+    A11yModule,
   ],
   providers: [Title],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
