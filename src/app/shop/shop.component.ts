@@ -50,8 +50,8 @@ export class ShopComponent implements OnInit {
     let flavor = '';
 
     // TODO: #7. Create selectable controls with Angular Material
-    this.selectedFillings.forEach(filling => {
-      flavor = flavor + '' + filling
+    this.selectedFillings.forEach((filling) => {
+      flavor = flavor + '' + filling;
     });
 
     const fakePurchase = `Purchase ${this.quantity} ${flavor}dumplings in the color ${this.color}!`;
